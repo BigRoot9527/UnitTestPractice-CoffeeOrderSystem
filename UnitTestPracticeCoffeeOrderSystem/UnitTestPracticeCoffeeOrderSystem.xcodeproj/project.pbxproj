@@ -13,6 +13,7 @@
 		32514A7420D744F10009F453 /* UnitTestPracticeCoffeeOrderSystem.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 32514A7220D744F10009F453 /* UnitTestPracticeCoffeeOrderSystem.xcdatamodeld */; };
 		32514A7620D744F10009F453 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32514A7520D744F10009F453 /* Assets.xcassets */; };
 		32514A7920D744F10009F453 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32514A7720D744F10009F453 /* LaunchScreen.storyboard */; };
+		32514A8120D745F80009F453 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32514A8020D745F80009F453 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		32514A7520D744F10009F453 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32514A7820D744F10009F453 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32514A7A20D744F10009F453 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32514A8020D745F80009F453 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				32514A7720D744F10009F453 /* LaunchScreen.storyboard */,
 				32514A7A20D744F10009F453 /* Info.plist */,
 				32514A7220D744F10009F453 /* UnitTestPracticeCoffeeOrderSystem.xcdatamodeld */,
+				32514A8020D745F80009F453 /* GoogleService-Info.plist */,
 			);
 			path = UnitTestPracticeCoffeeOrderSystem;
 			sourceTree = "<group>";
@@ -128,6 +131,7 @@
 				32514A7920D744F10009F453 /* LaunchScreen.storyboard in Resources */,
 				32514A7620D744F10009F453 /* Assets.xcassets in Resources */,
 				32514A7120D744F10009F453 /* Main.storyboard in Resources */,
+				32514A8120D745F80009F453 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
