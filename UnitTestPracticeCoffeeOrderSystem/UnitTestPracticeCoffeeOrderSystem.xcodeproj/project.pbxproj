@@ -14,11 +14,14 @@
 		32514A7920D744F10009F453 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32514A7720D744F10009F453 /* LaunchScreen.storyboard */; };
 		32514A8120D745F80009F453 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32514A8020D745F80009F453 /* GoogleService-Info.plist */; };
 		32514A8320D749190009F453 /* OrderPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32514A8220D749190009F453 /* OrderPageViewController.swift */; };
-		32514A8620D7523E0009F453 /* OrderPageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32514A8520D7523E0009F453 /* OrderPageTableViewCell.xib */; };
+		32514A8620D7523E0009F453 /* ItemListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32514A8520D7523E0009F453 /* ItemListTableViewCell.xib */; };
 		32514A8A20D7561F0009F453 /* SelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32514A8920D7561F0009F453 /* SelectionViewController.swift */; };
 		32514A8C20D756330009F453 /* ItemListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32514A8B20D756330009F453 /* ItemListViewController.swift */; };
 		32514A8F20D7574F0009F453 /* COSDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32514A8E20D7574F0009F453 /* COSDataManager.swift */; };
 		32514A9120D758DF0009F453 /* COSDatas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32514A9020D758DF0009F453 /* COSDatas.swift */; };
+		3253FE0320D77E29002234FB /* ItemListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3253FE0220D77E29002234FB /* ItemListTableViewCell.swift */; };
+		32DD565720D7713C000B350A /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DD565620D7713C000B350A /* CollectionViewCell.swift */; };
+		32DD565920D77166000B350A /* SelectionCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32DD565820D77166000B350A /* SelectionCollectionViewCell.xib */; };
 		EA82400D99C40A4C04A281A3 /* Pods_UnitTestPracticeCoffeeOrderSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D79EEACDF9D57614BBDE093 /* Pods_UnitTestPracticeCoffeeOrderSystem.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,11 +36,14 @@
 		32514A7A20D744F10009F453 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32514A8020D745F80009F453 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		32514A8220D749190009F453 /* OrderPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderPageViewController.swift; sourceTree = "<group>"; };
-		32514A8520D7523E0009F453 /* OrderPageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderPageTableViewCell.xib; sourceTree = "<group>"; };
+		32514A8520D7523E0009F453 /* ItemListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemListTableViewCell.xib; sourceTree = "<group>"; };
 		32514A8920D7561F0009F453 /* SelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionViewController.swift; sourceTree = "<group>"; };
 		32514A8B20D756330009F453 /* ItemListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListViewController.swift; sourceTree = "<group>"; };
 		32514A8E20D7574F0009F453 /* COSDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COSDataManager.swift; sourceTree = "<group>"; };
 		32514A9020D758DF0009F453 /* COSDatas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COSDatas.swift; sourceTree = "<group>"; };
+		3253FE0220D77E29002234FB /* ItemListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListTableViewCell.swift; sourceTree = "<group>"; };
+		32DD565620D7713C000B350A /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		32DD565820D77166000B350A /* SelectionCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectionCollectionViewCell.xib; sourceTree = "<group>"; };
 		A909C6D5FED752D25710E98E /* Pods-UnitTestPracticeCoffeeOrderSystem.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitTestPracticeCoffeeOrderSystem.release.xcconfig"; path = "Pods/Target Support Files/Pods-UnitTestPracticeCoffeeOrderSystem/Pods-UnitTestPracticeCoffeeOrderSystem.release.xcconfig"; sourceTree = "<group>"; };
 		DBA3A104B73FFE2BC71AA357 /* Pods-UnitTestPracticeCoffeeOrderSystem.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitTestPracticeCoffeeOrderSystem.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UnitTestPracticeCoffeeOrderSystem/Pods-UnitTestPracticeCoffeeOrderSystem.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,9 +89,9 @@
 		32514A6A20D744F10009F453 /* UnitTestPracticeCoffeeOrderSystem */ = {
 			isa = PBXGroup;
 			children = (
+				32514A8420D752240009F453 /* View */,
 				32514A8D20D757250009F453 /* Model */,
 				32514A8720D755C50009F453 /* Controller */,
-				32514A8420D752240009F453 /* View */,
 				32514A6B20D744F10009F453 /* AppDelegate.swift */,
 				32514A6F20D744F10009F453 /* Main.storyboard */,
 				32514A7520D744F10009F453 /* Assets.xcassets */,
@@ -100,7 +106,8 @@
 		32514A8420D752240009F453 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				32514A8520D7523E0009F453 /* OrderPageTableViewCell.xib */,
+				3253FE0120D77DD2002234FB /* ListTVCell */,
+				32DD565520D77114000B350A /* SelectionCVCell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -130,6 +137,24 @@
 				32514A9020D758DF0009F453 /* COSDatas.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		3253FE0120D77DD2002234FB /* ListTVCell */ = {
+			isa = PBXGroup;
+			children = (
+				32514A8520D7523E0009F453 /* ItemListTableViewCell.xib */,
+				3253FE0220D77E29002234FB /* ItemListTableViewCell.swift */,
+			);
+			path = ListTVCell;
+			sourceTree = "<group>";
+		};
+		32DD565520D77114000B350A /* SelectionCVCell */ = {
+			isa = PBXGroup;
+			children = (
+				32DD565620D7713C000B350A /* CollectionViewCell.swift */,
+				32DD565820D77166000B350A /* SelectionCollectionViewCell.xib */,
+			);
+			path = SelectionCVCell;
 			sourceTree = "<group>";
 		};
 		4A15E67D94AA95C84A124389 /* Pods */ = {
@@ -201,7 +226,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32514A8620D7523E0009F453 /* OrderPageTableViewCell.xib in Resources */,
+				32514A8620D7523E0009F453 /* ItemListTableViewCell.xib in Resources */,
+				32DD565920D77166000B350A /* SelectionCollectionViewCell.xib in Resources */,
 				32514A7920D744F10009F453 /* LaunchScreen.storyboard in Resources */,
 				32514A7620D744F10009F453 /* Assets.xcassets in Resources */,
 				32514A7120D744F10009F453 /* Main.storyboard in Resources */,
@@ -219,6 +245,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-UnitTestPracticeCoffeeOrderSystem/Pods-UnitTestPracticeCoffeeOrderSystem-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CodableFirebase/CodableFirebase.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
@@ -226,6 +253,7 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CodableFirebase.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
@@ -263,8 +291,10 @@
 			files = (
 				32514A7420D744F10009F453 /* UnitTestPracticeCoffeeOrderSystem.xcdatamodeld in Sources */,
 				32514A8C20D756330009F453 /* ItemListViewController.swift in Sources */,
+				32DD565720D7713C000B350A /* CollectionViewCell.swift in Sources */,
 				32514A8F20D7574F0009F453 /* COSDataManager.swift in Sources */,
 				32514A8A20D7561F0009F453 /* SelectionViewController.swift in Sources */,
+				3253FE0320D77E29002234FB /* ItemListTableViewCell.swift in Sources */,
 				32514A8320D749190009F453 /* OrderPageViewController.swift in Sources */,
 				32514A6C20D744F10009F453 /* AppDelegate.swift in Sources */,
 				32514A9120D758DF0009F453 /* COSDatas.swift in Sources */,
@@ -415,7 +445,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9VGZC87X4Y;
 				INFOPLIST_FILE = UnitTestPracticeCoffeeOrderSystem/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.BigRoot.UnitTestPracticeCoffeeOrderSystem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -431,7 +464,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9VGZC87X4Y;
 				INFOPLIST_FILE = UnitTestPracticeCoffeeOrderSystem/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.BigRoot.UnitTestPracticeCoffeeOrderSystem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

@@ -12,14 +12,14 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="128" id="EQu-8M-PY9">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemListTableViewCell" rowHeight="128" id="EQu-8M-PY9" customClass="ItemListTableViewCell" customModule="UnitTestPracticeCoffeeOrderSystem" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EQu-8M-PY9" id="Ogp-5Y-39t">
                 <rect key="frame" x="0.0" y="0.0" width="375" height="119.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zpt-1x-PsT">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zpt-1x-PsT">
                         <rect key="frame" x="10" y="10" width="100" height="100"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="zpt-1x-PsT" secondAttribute="height" multiplier="1:1" id="hxN-4I-SBx"/>
@@ -42,11 +42,17 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7gL-BW-4fF">
                                 <rect key="frame" x="0.0" y="0.0" width="87.5" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Yes"/>
+                                <connections>
+                                    <action selector="addButtonTapped:" destination="EQu-8M-PY9" eventType="touchUpInside" id="cNT-qR-Y9v"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ywj-RZ-qJ7">
                                 <rect key="frame" x="87.5" y="0.0" width="87.5" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="No"/>
+                                <connections>
+                                    <action selector="noButtonTapped:" destination="EQu-8M-PY9" eventType="touchUpInside" id="XVR-aR-NyJ"/>
+                                </connections>
                             </button>
                         </subviews>
                     </stackView>
@@ -55,11 +61,18 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R27-4s-zAN">
                                 <rect key="frame" x="0.0" y="0.0" width="87.5" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Iced"/>
+                                <state key="selected" title="Iced"/>
+                                <connections>
+                                    <action selector="icedButtonTapped:" destination="EQu-8M-PY9" eventType="touchUpInside" id="yaS-nf-Ql8"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EJI-ea-YLW">
                                 <rect key="frame" x="87.5" y="0.0" width="87.5" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Hot"/>
+                                <connections>
+                                    <action selector="hotButtonTapped:" destination="EQu-8M-PY9" eventType="touchUpInside" id="iNO-2l-WDt"/>
+                                </connections>
                             </button>
                         </subviews>
                     </stackView>
@@ -91,6 +104,14 @@
                     <constraint firstItem="mbe-mV-cxG" firstAttribute="centerY" secondItem="enz-ir-h0x" secondAttribute="centerY" id="xGE-Tk-J2v"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="itemAddSugarButton" destination="7gL-BW-4fF" id="fEE-aF-kPd"/>
+                <outlet property="itemHotButton" destination="EJI-ea-YLW" id="307-fl-Q5c"/>
+                <outlet property="itemIceButton" destination="R27-4s-zAN" id="SNC-qd-w4J"/>
+                <outlet property="itemImageView" destination="zpt-1x-PsT" id="Xkj-WI-SXU"/>
+                <outlet property="itemNameLabel" destination="h8V-AA-BFS" id="RM4-mN-B9t"/>
+                <outlet property="itemNoSugarButton" destination="Ywj-RZ-qJ7" id="eSa-3X-eur"/>
+            </connections>
             <point key="canvasLocation" x="-152.5" y="57"/>
         </tableViewCell>
     </objects>

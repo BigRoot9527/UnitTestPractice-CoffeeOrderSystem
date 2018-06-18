@@ -9,9 +9,16 @@
 import Foundation
 
 
-struct ItemSelection {
+struct CoffeeItem: Codable {
     
-    let imageURL: String
+    let image: String
     let name: String
     let price: Int
+}
+
+struct OrderItem {
+    
+    let coffeType: CoffeeItem
+    var iced: Bool
+    var addSugar: Bool
 }

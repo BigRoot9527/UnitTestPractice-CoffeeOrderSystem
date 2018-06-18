@@ -10,5 +10,6 @@ target 'UnitTestPracticeCoffeeOrderSystem' do
   pod 'Firebase'
   pod 'Firebase/Database'
   pod 'SDWebImage'
+  pod 'CodableFirebase'
 
 end
