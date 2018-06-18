@@ -9,10 +9,11 @@
 import Foundation
 import Firebase
 import FirebaseDatabase
+import CodableFirebase
 
 struct COSDataManager {
     
-    func getSelectionList(getArray: @escaping ([CoffeeItem]) -> Void){
+    func getSelectionList(getArray: @escaping ([CoffeeItem]) -> Void) {
         
         var selections: [CoffeeItem] = []
         
@@ -35,4 +36,37 @@ struct COSDataManager {
             }
         }
     }
+    
+    func save() {
+        let items = [AllOrdersInOneItem(itemName: "Green Tea", orders: [OrderType(cups: 3, iced: true, addsugar: false)])]
+        let orders = OrderList(radomNum: 666666, account: "33456478", status: 1, time: Date.timeIntervalBetween1970AndReferenceDate, content: items, itemCount: 12, price: 500)
+        let data = try? FirebaseEncoder().encode(orders)
+        Database.database().reference().child("orders").childByAutoId().setValue(data)
+    }
+    
+    func getOrderLists(getArray: @escaping ([OrderList]) -> Void) {
+        
+        var lists: [OrderList] = []
+        
+        Database.database().reference().child("orders").observeSingleEvent(of: .value) { snapshot in
+
+            print(snapshot.value)
+            guard let valueArray = snapshot.value as? [String: Any] else { return }
+            
+            valueArray.forEach{ value in
+                guard let orders = try? FirebaseDecoder().decode(OrderList.self, from: value.value) else { return
+                }
+                print(orders)
+                lists.append(orders)
+            }
+            
+            DispatchQueue.main.async {
+                getArray(lists)
+            }
+        }
+    }
+    
+    
+    
+    
 }

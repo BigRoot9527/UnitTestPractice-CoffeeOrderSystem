@@ -22,3 +22,28 @@ struct OrderItem {
     var iced: Bool
     var addSugar: Bool
 }
+
+struct OrderType: Codable {
+    
+    var cups: Int
+    let iced: Bool
+    let addsugar: Bool
+}
+
+struct AllOrdersInOneItem: Codable {
+    
+    let itemName: String
+    var orders: [OrderType]
+}
+
+struct OrderList: Codable {
+    
+    let radomNum: Double
+    let account: String
+    var status: Int
+    var time: TimeInterval
+    var content: [AllOrdersInOneItem]
+    var itemCount: Int
+    var price: Int
+}
+
