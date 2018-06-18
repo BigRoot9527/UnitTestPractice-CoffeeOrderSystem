@@ -8,5 +8,7 @@ target 'UnitTestPracticeCoffeeOrderSystem' do
   # Pods for UnitTestPracticeCoffeeOrderSystem
   pod 'Firebase/Core'
   pod 'Firebase'
+  pod 'Firebase/Database'
+  pod 'SDWebImage'
 
 end
