@@ -7,5 +7,6 @@ target 'UnitTestPracticeCoffeeOrderSystem' do
 
   # Pods for UnitTestPracticeCoffeeOrderSystem
   pod 'Firebase/Core'
+  pod 'Firebase'
 
 end

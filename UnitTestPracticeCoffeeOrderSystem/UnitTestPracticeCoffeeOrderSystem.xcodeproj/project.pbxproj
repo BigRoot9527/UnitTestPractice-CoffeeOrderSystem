@@ -14,9 +14,11 @@
 		32514A7620D744F10009F453 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32514A7520D744F10009F453 /* Assets.xcassets */; };
 		32514A7920D744F10009F453 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32514A7720D744F10009F453 /* LaunchScreen.storyboard */; };
 		32514A8120D745F80009F453 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32514A8020D745F80009F453 /* GoogleService-Info.plist */; };
+		EA82400D99C40A4C04A281A3 /* Pods_UnitTestPracticeCoffeeOrderSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D79EEACDF9D57614BBDE093 /* Pods_UnitTestPracticeCoffeeOrderSystem.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D79EEACDF9D57614BBDE093 /* Pods_UnitTestPracticeCoffeeOrderSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UnitTestPracticeCoffeeOrderSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		32514A6820D744F10009F453 /* UnitTestPracticeCoffeeOrderSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnitTestPracticeCoffeeOrderSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32514A6B20D744F10009F453 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32514A6D20D744F10009F453 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		32514A7820D744F10009F453 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32514A7A20D744F10009F453 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32514A8020D745F80009F453 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A909C6D5FED752D25710E98E /* Pods-UnitTestPracticeCoffeeOrderSystem.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitTestPracticeCoffeeOrderSystem.release.xcconfig"; path = "Pods/Target Support Files/Pods-UnitTestPracticeCoffeeOrderSystem/Pods-UnitTestPracticeCoffeeOrderSystem.release.xcconfig"; sourceTree = "<group>"; };
+		DBA3A104B73FFE2BC71AA357 /* Pods-UnitTestPracticeCoffeeOrderSystem.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitTestPracticeCoffeeOrderSystem.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UnitTestPracticeCoffeeOrderSystem/Pods-UnitTestPracticeCoffeeOrderSystem.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA82400D99C40A4C04A281A3 /* Pods_UnitTestPracticeCoffeeOrderSystem.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		207181B74253372D476AC35C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1D79EEACDF9D57614BBDE093 /* Pods_UnitTestPracticeCoffeeOrderSystem.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		32514A5F20D744F10009F453 = {
 			isa = PBXGroup;
 			children = (
 				32514A6A20D744F10009F453 /* UnitTestPracticeCoffeeOrderSystem */,
 				32514A6920D744F10009F453 /* Products */,
+				4A15E67D94AA95C84A124389 /* Pods */,
+				207181B74253372D476AC35C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +85,15 @@
 			path = UnitTestPracticeCoffeeOrderSystem;
 			sourceTree = "<group>";
 		};
+		4A15E67D94AA95C84A124389 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DBA3A104B73FFE2BC71AA357 /* Pods-UnitTestPracticeCoffeeOrderSystem.debug.xcconfig */,
+				A909C6D5FED752D25710E98E /* Pods-UnitTestPracticeCoffeeOrderSystem.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 32514A7D20D744F10009F453 /* Build configuration list for PBXNativeTarget "UnitTestPracticeCoffeeOrderSystem" */;
 			buildPhases = (
+				4BE4045102C39073B16B42AB /* [CP] Check Pods Manifest.lock */,
 				32514A6420D744F10009F453 /* Sources */,
 				32514A6520D744F10009F453 /* Frameworks */,
 				32514A6620D744F10009F453 /* Resources */,
+				3A2D08030CE76F349697AA61 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,6 +162,47 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A2D08030CE76F349697AA61 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-UnitTestPracticeCoffeeOrderSystem/Pods-UnitTestPracticeCoffeeOrderSystem-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UnitTestPracticeCoffeeOrderSystem/Pods-UnitTestPracticeCoffeeOrderSystem-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4BE4045102C39073B16B42AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UnitTestPracticeCoffeeOrderSystem-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		32514A6420D744F10009F453 /* Sources */ = {
@@ -286,15 +353,13 @@
 		};
 		32514A7E20D744F10009F453 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBA3A104B73FFE2BC71AA357 /* Pods-UnitTestPracticeCoffeeOrderSystem.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9VGZC87X4Y;
 				INFOPLIST_FILE = UnitTestPracticeCoffeeOrderSystem/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.BigRoot.UnitTestPracticeCoffeeOrderSystem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -304,15 +369,13 @@
 		};
 		32514A7F20D744F10009F453 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A909C6D5FED752D25710E98E /* Pods-UnitTestPracticeCoffeeOrderSystem.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9VGZC87X4Y;
 				INFOPLIST_FILE = UnitTestPracticeCoffeeOrderSystem/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.BigRoot.UnitTestPracticeCoffeeOrderSystem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
